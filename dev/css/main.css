@@ -165,7 +165,8 @@ a {
   transition: all 0.5s ease;
   width: 151px;
   height: 44px;
-  background: #FF9F26;
+  background: #FE8D00;
+  box-shadow: 0px 4px 23px 1px rgba(255, 158, 61, 0.66);
   border-radius: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -173,10 +174,6 @@ a {
   letter-spacing: 0.2px;
   color: #FFFFFF; }
   .btn:hover {
-    background: #FE8D00;
-    box-shadow: 0px 4px 23px 1px rgba(255, 158, 61, 0.66);
-    color: white; }
-  .btn:active {
     background: #D67700;
     box-shadow: 0px 4px 23px 1px rgba(214, 119, 0, 0.66);
     color: white; }
@@ -645,7 +642,7 @@ div {
   border: none;
   cursor: pointer;
   position: relative;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
@@ -659,7 +656,7 @@ div {
   content: "";
   position: absolute;
   right: inherit;
-  background: url(/img/ar1.svg) no-repeat;
+  background: url(../img/ar1.svg) no-repeat;
   width: 27px;
   left: 23px;
   height: 28px;
@@ -669,25 +666,25 @@ div {
 
 .accordeon__button.active {
   border-radius: 10px 10px 0px 0;
-  border-bottom: none; }
+  border-bottom: 1px solid transparent; }
 
 .accordeon__button.active:after {
   content: "";
   position: absolute;
   right: inherit;
-  background: url(/img/ar2.svg) no-repeat;
+  background: url(../img/ar2.svg) no-repeat;
   width: 27px;
   left: 23px;
   height: 28px;
   bottom: 39%;
   margin-bottom: -20px;
-  transition: all 0.5s ease; }
+  transition: all 0.7s ease; }
 
 .accordeon__panel {
   max-height: 0;
   overflow: hidden;
   margin-left: 0;
-  transition: all 0.5s ease; }
+  transition: all 0.7s ease; }
 
 .panel__text {
   list-style-type: none;
@@ -1062,11 +1059,12 @@ html *::-webkit-scrollbar-thumb {
   .main-left__create {
     margin: 40px auto; }
   .main-left__list {
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     justify-content: center;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: max-content; }
   .mm {
     width: max-content;
     margin: 0 auto; }
